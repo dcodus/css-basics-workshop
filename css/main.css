@@ -19,8 +19,9 @@ h1 {
     
 }
 .entry-header {
-    padding-bottom: 10px;
+    padding-bottom: 3px;
     border-bottom: 2px solid #e2e2e2;
+    margin-bottom: 10px;
 }
 .entry-subsection__heading {
     background: #FC644E;
@@ -39,6 +40,9 @@ h1 {
         float: left;
         width: 50%;
         padding: 3px;
+    }
+    .entry-header {
+        margin: 0 3px 10px;
     }
 }
 @media screen and (min-width: 900px){
