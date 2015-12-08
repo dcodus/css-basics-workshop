@@ -46,6 +46,8 @@ do it every time, or commit it once to master and branch off of there. Your choi
 ![exercise 1](https://i.imgur.com/NutCbP6.png)
 
 ## Exercise 2: CSS Positioning and Box Model
+To complete this exercise, you will need to read about [CSS positioning](http://learnlayout.com/position.html).
+
 * Add the following HTML to the `body` of an empty HTML page:
 ```html
 <aside class="dialog-box">
@@ -168,7 +170,133 @@ On mobile:
 
 ---
 
-## Exercise 5 (challenge-y): responsive grid!
+## Exercise 5: that addressbook, again!
+Using this markup:
+
+```html
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width">
+        <style type="text/css">
+            * {
+                box-sizing: border-box;
+            }
+            body {
+                font-family: "helvetica neue", helvetica, arial, sans-serif;
+            }
+            h1,h2,h3,h4,h5,h6 {
+                font-weight: 500;
+            }
+            
+            /* write your style rules below this line */
+        </style>
+    </head>
+    <body>
+        <h1>Sparta's Address Book</h1>
+        
+        <section class="entry">
+            <header class="entry-header">
+                <img class="entry-header__photo" src="http://i.imgur.com/fcdeUO2.jpg">
+                <h2 class="entry-header__name">Anton Sokolov</h2>
+            </header>
+            
+            <section class="entry-subsection">
+                <h3 class="entry-subsection__heading">
+                    Addresses
+                </h3>
+                <section class="entry-entity">
+                    <h4 class="entry-entity__heading">
+                        Home:
+                    </h4>
+                    <p class="entry-entity__content">
+                        Fuente del Gallo, 35<br>
+                        15151 Dumbría<br>
+                        Spain
+                    </p>
+                </section>
+                <section class="entry-entity">
+                    <h4 class="entry-entity__heading">
+                        Work:
+                    </h4>
+                    <p class="entry-entity__content">
+                        C/ Pablo Iglesias, 94<br>
+                        26325 Viniegra de Abajo<br>
+                        Spain
+                    </p>
+                </section>
+            </section>
+            
+            <section class="entry-subsection">
+                <h3 class="entry-subsection__heading">
+                    Emails
+                </h3>
+                <section class="entry-entity">
+                    <h4 class="entry-entity__heading">
+                        Home:
+                    </h4>
+                    <p class="entry-entity__content">
+                        VladlenAnisimov@rhyta.com 
+                    </p>
+                </section>
+                <section class="entry-entity">
+                    <h4 class="entry-entity__heading">
+                        Other:
+                    </h4>
+                    <p class="entry-entity__content">
+                        VAnisimov@teleworm.us
+                    </p>
+                </section>
+            </section>
+            
+            <section class="entry-subsection">
+                <h3 class="entry-subsection__heading">
+                    Phones
+                </h3>
+                <section class="entry-entity">
+                    <h4 class="entry-entity__heading">
+                        Home:
+                    </h4>
+                    <p class="entry-entity__content">
+                        +34 656 351 487
+                    </p>
+                </section>
+                <section class="entry-entity">
+                    <h4 class="entry-entity__heading">
+                        Work:
+                    </h4>
+                    <p class="entry-entity__content">
+                        +34 799 809 163
+                    </p>
+                </section>
+            </section>
+        </section>
+        
+    </body>
+</html>
+```
+
+reproduce the following layout **without modifying the markup at all**.
+
+Mobile:
+
+![mobile](https://i.imgur.com/kAJz5LJ.png)
+
+---
+
+Tablet:
+
+![tablet](https://i.imgur.com/hR1Rfpl.png)
+
+---
+
+Desktop:
+
+![desktop](https://i.imgur.com/iutw1AA.png)
+
+---
+
+## CHALLENGE: responsive grid!
 For this challenging exercise, we will be reproducing a **basic version** of [Foundation's responsive grid](http://foundation.zurb.com/grid.html).
 
 Zurb's Foundation is a CSS framework. Basically, it defines CSS rules for a ton of classes, and lets you use these classes in your HTML to achieve some effects like nice looking buttons, dropdown menus, etc.
