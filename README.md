@@ -46,6 +46,8 @@ do it every time, or commit it once to master and branch off of there. Your choi
 ![exercise 1](https://i.imgur.com/NutCbP6.png)
 
 ## Exercise 2: CSS Positioning and Box Model
+To complete this exercise, you will need to read about [CSS positioning](http://learnlayout.com/position.html).
+
 * Add the following HTML to the `body` of an empty HTML page:
 ```html
 <aside class="dialog-box">
@@ -168,7 +170,7 @@ On mobile:
 
 ---
 
-## Exercise 5 (challenge-y): responsive grid!
+## CHALLENGE: responsive grid!
 For this challenging exercise, we will be reproducing a **basic version** of [Foundation's responsive grid](http://foundation.zurb.com/grid.html).
 
 Zurb's Foundation is a CSS framework. Basically, it defines CSS rules for a ton of classes, and lets you use these classes in your HTML to achieve some effects like nice looking buttons, dropdown menus, etc.
