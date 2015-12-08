@@ -1,41 +1,101 @@
-<!doctype html>
+<!DOCTYPE html>
 <html>
-
-  <head>
-    <title>CSS Workshop Exercise</title>
-    <link rel="stylesheet" href="css/normalize.css">
-    <link rel="stylesheet" href="css/main.css">
-    <!-- add any css links here-->
-  </head>
-  
-  <body>
-    <div class="container">
-      
-      <nav class="nav-bar clearfix">
-        <ul>
-          <li><a href="#" class="nav-link">Home</a></li>
-          <li><a href="#" class="nav-link">Products</a></li>
-          <li><a href="#" class="nav-link">Services</a></li>
-          <li><a href="#" class="nav-link">About Us</a></li>
-          <li><a href="#" class="nav-link">Contact Us</a></li>
-        </ul>
-      </nav>
-      <section class="main-content clearfix">
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eveniet mollitia cumque ut ipsum commodi laboriosam eligendi ducimus eius fugiat suscipit?</p>
-        <p>Doloremque, suscipit dolor cupiditate est veniam eaque beatae nostrum dolores veritatis accusantium nemo exercitationem odio autem nisi id placeat rem!</p>
-        <p>Ab, quae, dolore nostrum officiis sint eligendi a voluptas fuga necessitatibus natus vitae commodi officia earum quos quia eius labore.</p>
-        <p>Harum, non consectetur inventore ea. Ut, numquam, natus sed veniam laborum corporis neque accusamus reiciendis consectetur distinctio aliquam nobis debitis.</p>
-        <p>Sed, error, quo, distinctio labore numquam similique ducimus iusto consequatur expedita consectetur culpa tempore blanditiis. Quos, sapiente quis soluta aspernatur?</p>
-        <p>Quam, accusantium, excepturi error aut facere molestiae incidunt iste vel earum quod sapiente dignissimos molestias laborum et quas nobis delectus.</p>
-        <p>Placeat, quasi, aliquid, eligendi, recusandae harum debitis fugit reprehenderit hic cumque nisi autem quibusdam itaque quae natus culpa alias architecto.</p>
-        <p>Veniam, quas, ducimus, vel debitis perspiciatis est nemo harum cum odit alias beatae iure quibusdam voluptatum soluta reprehenderit ipsam amet.</p>
-        <p>Architecto, omnis, harum voluptatem sit libero neque provident dolores recusandae dolorum reiciendis cumque praesentium ipsam ab fugit deserunt tempora optio?</p>
-        <p>Velit, perferendis, quas facilis molestiae ut laborum in quo obcaecati ipsa suscipit sint maxime excepturi at? Atque, nihil omnis qui.</p>
-        <p>Dicta eligendi adipisci officiis aspernatur tempora architecto dolorem accusamus corporis dignissimos voluptate! Ipsum, quos, ab earum iste necessitatibus eos expedita?</p>
-        <p>Vel, delectus, adipisci a fuga ut deserunt sunt mollitia deleniti modi ea sint repellat autem facilis debitis distinctio illum assumenda.</p>
-      </section>
-      
-      
-    </div>
-  </body>
+    <head>
+        <meta name="viewport" content="width=device-width">
+        <style type="text/css">
+            * {
+                box-sizing: border-box;
+            }
+            body {
+                font-family: "helvetica neue", helvetica, arial, sans-serif;
+            }
+            h1,h2,h3,h4,h5,h6 {
+                font-weight: 500;
+            }
+            
+            /* write your style rules below this line */
+        </style>
+        <link rel="stylesheet" href="./css/main.css" type="text/css" />
+    </head>
+    <body>
+        <h1>Sparta's Address Book</h1>
+        
+        <section class="entry">
+            <header class="entry-header clearfix">
+                <img class="entry-header__photo" src="http://i.imgur.com/fcdeUO2.jpg">
+                <h2 class="entry-header__name">Anton Sokolov</h2>
+            </header>
+            
+            <section class="entry-subsection">
+                <h3 class="entry-subsection__heading">
+                    Addresses
+                </h3>
+                <section class="entry-entity">
+                    <h4 class="entry-entity__heading">
+                        Home:
+                    </h4>
+                    <p class="entry-entity__content">
+                        Fuente del Gallo, 35<br>
+                        15151 Dumbría<br>
+                        Spain
+                    </p>
+                </section>
+                <section class="entry-entity">
+                    <h4 class="entry-entity__heading">
+                        Work:
+                    </h4>
+                    <p class="entry-entity__content">
+                        C/ Pablo Iglesias, 94<br>
+                        26325 Viniegra de Abajo<br>
+                        Spain
+                    </p>
+                </section>
+            </section>
+            
+            <section class="entry-subsection">
+                <h3 class="entry-subsection__heading">
+                    Emails
+                </h3>
+                <section class="entry-entity">
+                    <h4 class="entry-entity__heading">
+                        Home:
+                    </h4>
+                    <p class="entry-entity__content">
+                        VladlenAnisimov@rhyta.com 
+                    </p>
+                </section>
+                <section class="entry-entity">
+                    <h4 class="entry-entity__heading">
+                        Other:
+                    </h4>
+                    <p class="entry-entity__content">
+                        VAnisimov@teleworm.us
+                    </p>
+                </section>
+            </section>
+            
+            <section class="entry-subsection">
+                <h3 class="entry-subsection__heading">
+                    Phones
+                </h3>
+                <section class="entry-entity">
+                    <h4 class="entry-entity__heading">
+                        Home:
+                    </h4>
+                    <p class="entry-entity__content">
+                        +34 656 351 487
+                    </p>
+                </section>
+                <section class="entry-entity">
+                    <h4 class="entry-entity__heading">
+                        Work:
+                    </h4>
+                    <p class="entry-entity__content">
+                        +34 799 809 163
+                    </p>
+                </section>
+            </section>
+        </section>
+        
+    </body>
 </html>
